@@ -1,7 +1,7 @@
 const GRID_WIDTH = 18;
 const GRID_HEIGHT = 12;
 
-const SIZE_RATIO = 0.98;
+const SIZE_RATIO = 1;
 
 const FONT_MULTIPLIER = 0.6;
 
