@@ -1,7 +1,7 @@
 const GRID_WIDTH = 18;
 const GRID_HEIGHT = 12;
 
-const SIZE_RATIO = 0.98;
+const SIZE_RATIO = 0.95;
 
 
 let grid;
@@ -38,7 +38,7 @@ function draw() {
 
     // Draw number of players
     fill(255);
-    textSize(50);
+    textSize(30);
     strokeWeight(0);
     textAlign(CENTER, CENTER);
     text(grid.nplayers + " Players", realWidth / 2 + (width - realWidth) / 2, topBarHeight / 2);
@@ -49,7 +49,7 @@ function draw() {
     strokeWeight(5);
     rect(realWidth - topBarHeight*0.8 + (width - realWidth) / 2, topBarHeight * 0.2, topBarHeight * 0.6, topBarHeight * 0.6);
     fill(255);
-    textSize(50);
+    textSize(30);
     strokeWeight(0);
     textAlign(CENTER, CENTER);
     text("+", realWidth - topBarHeight*0.5 + (width - realWidth) / 2, topBarHeight * 0.52);
@@ -60,7 +60,7 @@ function draw() {
     strokeWeight(5);
     rect(topBarHeight*0.2 + (width - realWidth) / 2, topBarHeight * 0.2, topBarHeight * 0.6, topBarHeight * 0.6);
     fill(255);
-    textSize(50);
+    textSize(30);
     strokeWeight(0);
     textAlign(CENTER, CENTER);
     text("<", topBarHeight*0.5 + (width - realWidth) / 2, topBarHeight * 0.52);
