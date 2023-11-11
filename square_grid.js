@@ -119,7 +119,7 @@ class SquareGrid {
 
             fill(COLORS[this.turn]);
             strokeWeight(STROKE_WEIGHT * 2);
-            textSize(32);
+            textSize(32*FONT_MULTIPLIER);
             textAlign(CENTER, CENTER);
             text(PLAYER_NAMES[this.turn] + " player won!", width / 2, height * 0.35);
 
@@ -129,7 +129,7 @@ class SquareGrid {
             circle(width*0.45, height*0.47, width*0.05);
             fill(COLORS[this.turn]);
             strokeWeight(STROKE_WEIGHT * 2);
-            textSize(32);
+            textSize(32*FONT_MULTIPLIER);
             textAlign(CENTER, CENTER);
             text("OK", width*0.45, height * 0.47);
 
@@ -139,7 +139,7 @@ class SquareGrid {
             circle(width*0.55, height*0.47, width*0.05);
             fill(COLORS[this.turn]);
             strokeWeight(STROKE_WEIGHT * 2);
-            textSize(32);
+            textSize(32*FONT_MULTIPLIER);
             textAlign(CENTER, CENTER);
             text("RA", width*0.55, height * 0.47);
         }
