@@ -1,7 +1,7 @@
 const GRID_WIDTH = 18;
 const GRID_HEIGHT = 12;
 
-const SIZE_RATIO = 1;
+const SIZE_RATIO = 0.98;
 
 const FONT_MULTIPLIER = 0.6;
 
@@ -15,7 +15,7 @@ let inMenu = true;
 let realWidth;
 
 function setup() {
-    topBarHeight = windowHeight * 0.07;
+    topBarHeight = windowHeight * 0.1;
     createCanvas(windowWidth * SIZE_RATIO, windowHeight * SIZE_RATIO);
 
     realWidth = ((windowHeight * SIZE_RATIO) * 1.5);
