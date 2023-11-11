@@ -88,12 +88,12 @@ function mousePressed() {
         return;
     }
     // Check if mouse is in grid
-    if (mouseX > 0 && mouseX < width && mouseY > 100 && mouseY < height) {
+    if (mouseX > (width - realWidth) / 2 && mouseX < width - (width - realWidth) / 2 && mouseY > 100 && mouseY < height) {
         grid.click(mouseX - (width - realWidth) / 2, mouseY - topBarHeight);
     }
     else {
         // If the mouse is on the add player button, add a player
-        if (mouseX > width - topBarHeight*0.8 && mouseX < width - topBarHeight*0.2 && mouseY > topBarHeight * 0.2 && mouseY < topBarHeight * 0.8) {
+        if (mouseX > realWidth - topBarHeight*0.8 + (width - realWidth) / 2 && mouseX < realWidth - topBarHeight*0.2 + (width - realWidth) / 2 && mouseY > topBarHeight * 0.2 && mouseY < topBarHeight * 0.8) {
             if (grid.nplayers < 8) {
                 grid.nplayers++;
                 // Add a new player to playerStates list
@@ -102,7 +102,7 @@ function mousePressed() {
         }
 
         // If the mouse is on the back button, restore the previous grid
-        if (mouseX > topBarHeight*0.2 && mouseX < topBarHeight*0.8 && mouseY > topBarHeight * 0.2 && mouseY < topBarHeight * 0.8) {
+        if (mouseX > topBarHeight*0.2 + (width - realWidth) / 2 && mouseX < topBarHeight*0.8 + (width - realWidth) / 2 && mouseY > topBarHeight * 0.2 && mouseY < topBarHeight * 0.8) {
             grid.restore();
         }
     }
