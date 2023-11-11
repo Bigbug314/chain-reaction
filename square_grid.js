@@ -7,7 +7,7 @@ const CIRCLE_RADIUS = 0.4;
 const CIRLCE_DISTANCE = 0.15;
 
 // 1 or 2 depending on screen size
-const STROKE_WEIGHT = 1;
+const STROKE_WEIGHT = 2;
 
 const ANIMATION_DURATION = 20;
 

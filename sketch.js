@@ -82,7 +82,7 @@ function drawMenu() {
 }
 
 
-function mousePressed() {
+function mouseClicked() {
     if (inMenu) {
         inMenu = false;
         return;
